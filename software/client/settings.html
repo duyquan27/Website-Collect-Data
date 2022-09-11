@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./assets/extender-router.svg">
+    <link rel="stylesheet" href="./css/settings.css">
+
+    <title>IoT System</title>
+
+</head>
+
+<body>
+    <div class="loading">
+        <div class="lds-facebook">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+    </div>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <span class="material-symbols-rounded" style="font-size: 32px">
+                menu
+            </span>
+        </label>
+        <label class="logo-page">IoT System</label>
+        <ul>
+            <li><a href="./index.html">Overview</a></li>
+            <li><a href="./history.html">History</a></li>
+            <li><a href="./chart.html">Chart</a></li>
+            <li><a class="active" href="#">Settings</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <div class="container">
+            <div class="settings-container">
+                <div class="sensor-container">
+                    <div class="table-container">
+                        <h2>Sensors <small>Settings threshold</small></h2>
+                        <ul class="responsive-table">
+                        </ul>
+                        <div class="table-button">
+                            <button class="btn-save" id="btn-save-sensor">SAVE
+                                <div class="loader-container sensor-loader">
+                                    <div class="lds-dual-ring"></div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="color-container">
+                    <div class="color-selector">
+                        <div class="select-menu">
+                            <div class="select-btn">
+                                <span class="sBtn-text">Select color location</span>
+                                <span class="material-symbols-rounded">
+                                    expand_more
+                                </span>
+                            </div>
+
+                            <ul class="options">
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="color-picker"></div>
+                    <div class="btn-save" id="btn-save-color">SAVE
+                        <div class="loader-container color-loader">
+                            <div class="lds-dual-ring"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+<script type="module" src="./js/firebase.js"></script>
+<script type="module" src="./js/color-picker.js"></script>
+<script type="module" src="./js/settings.js"></script>
+
+
+
+</html>
